@@ -1,0 +1,14 @@
+<!-- views/edit.ejs -->
+<div class="form-container">
+    <h2>agregar Post</h2>
+    <form action="/editar/<%= post.id %>" method="POST">
+      <input type="hidden" name="_method" value="PUT">
+      <label for="title">Título:</label>
+      <input type="text" id="title" name="title" value="<%= post.title %>" required>
+      <label for="content">Contenido:</label>
+      <textarea id="content" name="content" required><%= post.content %></textarea>
+      <label for="imageUrl">URL de la Imagen:</label>
+      <input type="text" id="imageUrl" name="imageUrl" value="<%= post.imageUrl %>">
+      <button type="submit">Guardar Cambios</button>
+    </form>
+  </div>  
