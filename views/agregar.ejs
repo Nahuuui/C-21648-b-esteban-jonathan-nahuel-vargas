@@ -1,13 +1,23 @@
-<!-- soriequeton -->
-<div class="form-container">
-    <h2>Agregar Post</h2>
-    <form action="/agregar" method="POST">
-      <label for="title">Título:</label>
-      <input type="text" id="title" name="title" required>
-      <label for="content">Contenido:</label>
-      <textarea id="content" name="content" required></textarea>
-      <label for="imageUrl">URL de la Imagen:</label>
-      <input type="text" id="imageUrl" name="imageUrl">
-      <button type="submit">Agregar</button>
-    </form>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Post</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="form-title">Agregar Post</h2>
+        <form class="form" action="/agregar" method="POST">
+            <label class="form-label" for="title">Título:</label>
+            <input class="form-input" type="text" id="title" name="title" required>
+            <label class="form-label" for="content">Contenido:</label>
+            <textarea class="form-input" id="content" name="content" required></textarea>
+            <label class="form-label" for="imageUrl">URL de la Imagen:</label>
+            <input class="form-input" type="text" id="imageUrl" name="imageUrl">
+            <button class="form-button" type="submit">Agregar</button>
+        </form>
+    </div>
+</body>
+</html>

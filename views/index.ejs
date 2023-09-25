@@ -1,11 +1,12 @@
 <!-- views/index.ejs -->
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
 <h2>Posts</h2>
 <ul class="post-list">
   <% posts.forEach(post => { %>
     <li class="post">
-      <h3><%= post.title %></h3>
+      <h3 class="post-title"><%= post.title %></h3>
       <p class="post-content"><%= post.content %></p>
-      <img src="<%= post.imageUrl %>" alt="Imagen relacionada">
+      <img class="post-image" src="<%= post.imageUrl %>" alt="Imagen relacionada">
       <p class="post-date">Fecha de creación: <%= post.createdAt.toDateString() %></p>
       <div class="post-actions">
         <a href="/editar/<%= post.id %>">Editar</a>
@@ -16,4 +17,5 @@
     </li>
   <% }); %>
 </ul>
-<a href="/agregar">Agregar Post</a>
+<a href="/agregar" class="add-post-link">Agregar Post</a>
+
